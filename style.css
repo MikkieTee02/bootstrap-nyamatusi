@@ -1,3 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+}
+body p {
+  font-size: 14px;
+}
+body a {
+  font-size: 14px;
+}
+body h2 {
+  font-weight: 300;
+  font-size: 30px;
+}
+body h5 {
+  font-size: 18px;
+}
+
 .banner {
   background-image: url(img/zebra\ banner\ 2\ 1.png);
   background-position: center;
@@ -152,12 +170,12 @@
   width: 100px;
   border-style: none;
   border-radius: 2px;
+  margin-top: 20px;
 }
 
 .luxury {
   background-color: #e75317;
   color: white;
-  padding: 2%;
   height: 60vh;
   width: 290px;
 }
@@ -180,10 +198,54 @@
   color: white;
 }
 
+.liner {
+  border-bottom: 1px white solid;
+}
+
+.giraffe {
+  padding-top: 5%;
+}
+
+.bucks {
+  padding-top: 10%;
+}
+
+.zebra {
+  padding-top: 2%;
+}
+
+.elephant {
+  margin-top: -100px;
+}
+
 @media (max-width: 576px) {
-  .banner h1 {
-    color: white;
+  .head h1 {
     font-size: 80px;
-    text-align: center;
+  }
+  .liner {
+    border-bottom: none;
+  }
+  .icons {
+    padding: 20px;
+  }
+  .orange {
+    margin-bottom: 30px;
+  }
+  .giraffe, .bucks, .zebra, .elephant, .lions, .beasts {
+    padding-top: 2%;
+  }
+  .elephant {
+    margin-top: 10px;
+  }
+  .luxury {
+    width: 100%;
+  }
+  .slide {
+    gap: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .giraffe, .bucks, .zebra, .elephant, .lions, .beasts {
+    padding-top: 2%;
   }
 }/*# sourceMappingURL=style.css.map */

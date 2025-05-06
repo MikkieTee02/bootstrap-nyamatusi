@@ -1,30 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-.banner{
+body {
+    
+    font-family: "Montserrat", sans-serif;
+    p{
+        font-size: 14px;
+    }
+    a{
+        font-size: 14px;
+    }
+
+    h2{
+        font-weight: 300;
+        font-size: 30px;
+    }
+
+    h5{
+        font-size: 18px;
+    }
+}
+
+.banner {
     background-image: url(img/zebra\ banner\ 2\ 1.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    .nav-link{
+
+    .nav-link {
         color: white;
     }
-    .head{
+
+    .head {
         display: flex;
-       justify-content: center;
-       flex-direction: column;
-       height: 40vh ;
+        justify-content: center;
+        flex-direction: column;
+        height: 40vh;
     }
-    h1{
+
+    h1 {
         color: white;
         font-size: 150px;
         text-align: center;
-        
-        
-        
+
+
+
     }
 
-    .nav-link:hover{
+    .nav-link:hover {
         text-decoration: underline;
     }
 }
@@ -32,139 +56,144 @@
 
 
 
-@mixin activities{
-    
+@mixin activities {
+
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 60vh;
     display: inline-block;
-        position: relative;
-        h5{
-            cursor:pointer;
-        }
+    position: relative;
+
+    h5 {
+        cursor: pointer;
+    }
 }
 
- 
-    .game{
-        background-image: url(img/game\ drives.png);
-        @include activities();
-       
-    }
-    .safari{
-        background-image: url(img/Rectangle\ 16.png);
-        @include activities();
 
-    }
-    .bird{
-        background-image: url(img/bino.png);
-        @include activities();
-    }
+.game {
+    background-image: url(img/game\ drives.png);
+    @include activities();
 
-    .canoe{
-        background-image: url(img/Rectangle\ 19.png);
-        @include activities();
-    }
+}
 
-    .fish{
-        background-image: url(img/fishing.png);
-        @include activities();
-    }
+.safari {
+    background-image: url(img/Rectangle\ 16.png);
+    @include activities();
 
-    .Jacob{
-        background-image: linear-gradient(0deg,rgba(231, 83, 23, 0.4),rgba(231, 83, 23, 0.4)) ,url(img/men\ sipping\ beer.jfif) ;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 70vh;
-        
-    }
+}
 
-    .Brown{
-        background-image: linear-gradient(0deg,rgba(231, 83, 23, 0.4),rgba(231, 83, 23, 0.4)), url(img/family.jfif);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat; 
-        height: 70vh;
-    }
-    
-    .inner{
-        height: 70vh;
-    }
+.bird {
+    background-image: url(img/bino.png);
+    @include activities();
+}
 
-    .foot{
-        background-color: #e75317;
+.canoe {
+    background-image: url(img/Rectangle\ 19.png);
+    @include activities();
+}
+
+.fish {
+    background-image: url(img/fishing.png);
+    @include activities();
+}
+
+.Jacob {
+    background-image: linear-gradient(0deg, rgba(231, 83, 23, 0.4), rgba(231, 83, 23, 0.4)), url(img/men\ sipping\ beer.jfif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+
+}
+
+.Brown {
+    background-image: linear-gradient(0deg, rgba(231, 83, 23, 0.4), rgba(231, 83, 23, 0.4)), url(img/family.jfif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+}
+
+.inner {
+    height: 70vh;
+}
+
+.foot {
+    background-color: #e75317;
+    color: white;
+
+    .nav-link {
         color: white;
-       
-        .nav-link{
-            color: white;
-        }
-
-        button{
-            background-color: #3e3721;
-            border-style: none;
-            border-radius: 2px;
-            width: 100px;
-            
-        }
-        
     }
 
-  
-        
-    
-.texts{
-        display: none;
+    button {
+        background-color: #3e3721;
+        border-style: none;
+        border-radius: 2px;
+        width: 100px;
+
     }
- 
-.game:hover p{
- display: block;
-}
-.safari:hover p{
- display: block;
+
 }
 
- .fish:hover p{
+
+
+
+.texts {
+    display: none;
+}
+
+.game:hover p {
     display: block;
 }
 
-.canoe:hover p{
+.safari:hover p {
     display: block;
 }
 
-.bird:hover p{
+.fish:hover p {
     display: block;
 }
 
-.orange{
+.canoe:hover p {
+    display: block;
+}
+
+.bird:hover p {
+    display: block;
+}
+
+.orange {
     color: white;
     background-color: #e75317;
     width: 100px;
     border-style: none;
     border-radius: 2px;
+    margin-top: 20px;
 }
 
 
-.luxury{
+.luxury {
     background-color: #e75317;
     color: white;
-    padding: 2%;
+   
     height: 60vh;
     width: 290px;
-    
+
 }
 
-.inner4{
+.inner4 {
     background-image: url(img/long\ river.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 60vh;
     color: white;
-    
+
 }
 
-.inner5{
+.inner5 {
     background-image: url(img/pool2.jfif);
     background-position: center;
     background-size: cover;
@@ -173,27 +202,83 @@
     color: white;
 }
 
+.liner{
+    border-bottom: 1px white solid;
 
-@media( max-width: 576px){
-   
-        .banner h1{
-            color: white;
-            font-size: 80px;
-            text-align: center;
-            }
+}
+
+.giraffe{
+   padding-top: 5%; 
+}
+
+.bucks{
+   padding-top: 10%; 
+}
+
+.zebra{
+  padding-top: 2%;  
+}
+
+.elephant{
+    margin-top: -100px;
 }
 
 
 
 
 
-           
+@media (max-width: 576px) {
+    .head{
+        h1{
+            font-size: 80px;
+        }
+      
+    }
+    .liner{
+        border-bottom: none;
+    }
+
+    .icons{
+        padding: 20px;
+    }
+
+    .orange{
+        margin-bottom: 30px;
+    }
+
+    .giraffe, .bucks, .zebra, .elephant, .lions, .beasts{
+        padding-top: 2%;
     
+        
+        
+    }
+   
+   .elephant {
+    margin-top: 10px;
+   }
+
+   .luxury{
+    width: 100%;
+   }
+
+   
+
+   .slide{
+    gap: 15px;
+   }
+
+   
+   
+  }
+
+  @media (max-width: 768px){
+    .giraffe, .bucks, .zebra, .elephant, .lions, .beasts{
+        padding-top: 2%;
+    
+        
+        
+    }
 
     
-    
-
-    
-
+  }
   
- 
